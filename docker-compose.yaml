@@ -1,0 +1,18 @@
+version: '2'
+services:
+  wildfly:
+    build: .
+    depends_on:
+      - db
+    restart: always
+    ports:
+      - "8080:8080"
+      - "9990:9990"
+
+  db:
+    restart: always
+    image: postgres:9.6.2
+    environment:
+      - DB_PASS=pass
+    ports:
+      - "5433:5432"
