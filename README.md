@@ -1,11 +1,9 @@
 # Resty
 A RESTful shift manager
 
-
 This project works with Docker & Docker compose.
 
-Useage:
-
+## Useage:
 `
-docker-compose build
+docker-compose build  
 docker-compose up -d`
